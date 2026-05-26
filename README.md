@@ -1,34 +1,39 @@
-# pythonassignment
-# Python Algorithms Collection  
-This repository contains two Python programs:
+1.⁠ ⁠N-Queens Problem Solver
+Description
 
-1. **N-Queens Solver** – Uses backtracking to generate all valid solutions.
-2. **Custom Regex Pattern Matcher** – Implements a simple pattern-matching system with `+` support.
+The N-Queens problem is a classic backtracking problem where the goal is to place N queens on an N × N chessboard such that:
 
-Both programs are fully documented below.
+No two queens attack each other
+No queens share:
+the same row
+the same column
+the same diagonal
 
----
+This program uses a backtracking algorithm to generate all valid solutions.
 
-# 🧩 1. N-Queens Solver
+Features
+Uses recursion and backtracking
+Displays all valid board configurations
+Counts total number of solutions
+Dynamic board size based on user input
+Algorithm Used
 
-This program solves the classic **N-Queens problem**, where you must place `N` queens on an `N×N` chessboard so that none of them attack each other.
+The program follows these steps:
 
-## 🛠️ Features
-- Backtracking algorithm  
-- Counts all valid solutions  
-- Displays each board configuration  
-- Works for any integer `N ≥ 1`
+Start placing queens row by row
+Check whether a position is safe
+Place a queen if safe
+Recursively move to the next row
+Backtrack if no valid position exists
+Concepts Covered
+Backtracking
+Recursion
+Sets in Python
+2D Lists
+Problem Solving Algorithms
 
----
+2.⁠ ⁠Simple Regular Expression Matcher
+Description
 
-## 🧠 How It Works
-The solver uses:
-- `used_columns` → tracks blocked columns  
-- `used_diag1` → tracks `row - col` diagonals  
-- `used_diag2` → tracks `row + col` diagonals  
+This program implements a very simple custom regular expression system without using Python's built-in re module.
 
-Whenever a queen is placed, these sets ensure no other queen can attack it.
-
----
-
-## ▶️ Example Run
